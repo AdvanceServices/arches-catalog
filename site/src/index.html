@@ -67,7 +67,7 @@ title: Arches Catalog — Community Extensions and Applications
     {%- for pkg in packages | sort(attribute="name") %}
     {%- set isArchesProject = pkg.maintainers and (pkg.maintainers | join(",")).includes("archesproject") %}
     <li
-      class="package-card{% if isArchesProject %} package-card--archesproject{% endif %}"
+      class="package-card"
       data-kind="{{ pkg.kind }}"
       data-status="{{ pkg.status }}"
       data-arches-versions="{{ pkg.arches_versions }}"
@@ -86,13 +86,15 @@ title: Arches Catalog — Community Extensions and Applications
       {%- if pkg.maintainers and pkg.maintainers.length %}
       <p class="card-owner">
         {%- for maintainer in pkg.maintainers %}
-        <a href="https://github.com/{{ maintainer }}" rel="noopener noreferrer">@{{ maintainer }}</a>
-        {%- if maintainer === "archesproject" -%}
-        <span class="archesproject-mark"><img src="/public/logo.svg" alt="Arches Project" class="archesproject-mark-logo"></span>
-        {%- endif %}
-        {%- if not loop.last %}, {% endif %}
+        <a href="https://github.com/{{ maintainer }}" rel="noopener noreferrer">@{{ maintainer }}</a>{% if not loop.last %}, {% endif %}
         {%- endfor %}
       </p>
+      {%- endif %}
+      {%- if isArchesProject %}
+      <div class="archesproject-banner">
+        <img src="/public/logo.svg" alt="Arches Project" class="archesproject-banner-logo">
+        <span>Maintained by the Arches Project core development team</span>
+      </div>
       {%- endif %}
 
       <p class="card-summary">{{ pkg.summary }}</p>
