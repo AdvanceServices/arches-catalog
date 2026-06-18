@@ -252,8 +252,8 @@ a:hover { color: var(--color-arches-red-dark); }
   border-color: var(--color-arches-red);
 }
 .package-card--archesproject {
-  border-left: 3px solid var(--color-arches-red);
-  padding-left: calc(1.25rem - 2px);
+  border-top: 3px solid var(--color-arches-red);
+  padding-top: calc(1.25rem - 2px);
 }
 .archesproject-mark {
   display: inline-flex;
