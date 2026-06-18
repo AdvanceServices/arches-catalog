@@ -272,9 +272,9 @@ a:hover { color: var(--color-arches-red-dark); }
   z-index: 1;
 }
 .archesproject-ribbon-logo {
-  width: 1.5rem;
-  height: auto;
-  filter: brightness(0) invert(1);
+  width: 1.25rem;
+  height: 1.25rem;
+  flex-shrink: 0;
 }
 .archesproject-mark {
   display: inline-flex;
