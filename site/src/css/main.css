@@ -252,8 +252,27 @@ a:hover { color: var(--color-arches-red-dark); }
   border-color: var(--color-arches-red);
 }
 .package-card--archesproject {
-  border-left: 3px solid var(--color-arches-red);
-  padding-left: calc(1.25rem - 2px);
+  position: relative;
+  overflow: hidden;
+}
+.archesproject-ribbon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 3.5rem 3.5rem 0;
+  border-color: transparent var(--color-arches-red) transparent transparent;
+}
+.archesproject-ribbon-logo {
+  position: absolute;
+  top: 0.25rem;
+  right: 0.2rem;
+  width: 1.1rem;
+  height: auto;
+  filter: brightness(0) invert(1);
+  pointer-events: none;
 }
 .archesproject-mark {
   display: inline-flex;

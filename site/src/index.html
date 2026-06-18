@@ -73,6 +73,11 @@ title: Arches Catalog — Community Extensions and Applications
       data-arches-versions="{{ pkg.arches_versions }}"
       data-pagefind-body
     >
+      {%- if isArchesProject %}
+      <div class="archesproject-ribbon" aria-hidden="true">
+        <img src="/public/logo.svg" alt="" class="archesproject-ribbon-logo">
+      </div>
+      {%- endif %}
       <div class="card-header">
         <div class="card-title-row">
           <a href="{{ pkg.repository }}" class="card-name" rel="noopener noreferrer">{{ pkg.name }}</a>
