@@ -88,7 +88,7 @@ title: Arches Catalog — Community Extensions and Applications
         {%- for maintainer in pkg.maintainers %}
         <a href="https://github.com/{{ maintainer }}" rel="noopener noreferrer">@{{ maintainer }}</a>
         {%- if maintainer === "archesproject" -%}
-        <span class="archesproject-mark"><img src="/public/logo.svg" alt="Arches Project" class="archesproject-mark-logo"></span>
+        <span class="archesproject-mark"><img src="/public/logo.svg" alt="Arches Project" class="archesproject-mark-logo"><svg class="archesproject-verified-tick" viewBox="0 0 24 24" aria-label="Verified Arches Project maintainer"><circle cx="12" cy="12" r="12" fill="#1d9bf0"/><path d="M9.5 16.5l-3.5-3.5 1.41-1.41L9.5 13.67l7.09-7.08L18 8l-8.5 8.5z" fill="white"/></svg></span>
         {%- endif %}
         {%- if not loop.last %}, {% endif %}
         {%- endfor %}

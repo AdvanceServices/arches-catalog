@@ -258,6 +258,7 @@ a:hover { color: var(--color-arches-red-dark); }
 .archesproject-mark {
   display: inline-flex;
   align-items: center;
+  gap: 0.2rem;
   margin-left: 0.3rem;
   position: relative;
   cursor: help;
@@ -267,6 +268,14 @@ a:hover { color: var(--color-arches-red-dark); }
   height: 0.8rem;
   width: auto;
   filter: brightness(0) saturate(100%) invert(20%) sepia(90%) saturate(1200%) hue-rotate(335deg) brightness(95%);
+}
+.archesproject-verified-tick {
+  display: inline-flex;
+  align-items: center;
+  color: #1d9bf0;
+  height: 0.9rem;
+  width: 0.9rem;
+  flex-shrink: 0;
 }
 .archesproject-mark::after {
   content: "Maintained by the Arches Project core team";
