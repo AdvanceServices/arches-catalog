@@ -6,7 +6,7 @@ pypi: arches-merge
 license: AGPL-3.0-or-later
 maintainers:
   - AdvanceServices
-arches_versions: ">=7.6.12,<7.7.0"
+arches_versions: ">=7.6.12,<8.3.0"
 domains:
   - etl-module
   - cultural-heritage
