@@ -1,0 +1,19 @@
+name: arches-csv
+kind: extension
+summary: CSV import and export ETL module for loading Arches resource data from CSV files.
+repository: https://github.com/thegetty/arches-csv
+pypi: arches-csv
+license: AGPL-3.0-or-later
+maintainers:
+  - AdvanceServices
+arches_versions: ">=7.6.17,<8.3.0"
+domains:
+  - etl-module
+  - cultural-heritage
+tags:
+  - csv
+  - import-export
+  - etl-module
+  - resource-models
+  - data-loading
+status: beta
