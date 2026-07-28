@@ -1,0 +1,17 @@
+name: arches-merge
+kind: extension
+summary: Merge two or more resources into one resource.
+repository: https://github.com/thegetty/arches-merge
+pypi: arches-merge
+license: AGPL-3.0-or-later
+maintainers:
+  - AdvanceServices
+arches_versions: ">=7.6.12,<8.3.0"
+domains:
+  - etl-module
+  - cultural-heritage
+tags:
+  - django
+  - etl-module
+  - resource-models
+status: stable
