@@ -1,8 +1,8 @@
-name: arches-csv
+name: arches-nested-tile-csv-importer
 kind: extension
-summary: CSV import and export ETL module for loading Arches resource data from CSV files.
+summary: Import a CSV file of nested tile data.
 repository: https://github.com/thegetty/arches-csv
-pypi: arches-csv
+pypi: arches-nested-tile-csv-importer
 license: AGPL-3.0-or-later
 maintainers:
   - AdvanceServices
@@ -12,7 +12,7 @@ domains:
   - cultural-heritage
 tags:
   - csv
-  - import-export
+  - nested-tiles
   - etl-module
   - resource-models
   - data-loading
