@@ -16,4 +16,4 @@ tags:
   - etl-module
   - resource-models
   - data-loading
-status: beta
+status: stable
